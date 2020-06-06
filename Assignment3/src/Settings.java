@@ -1,6 +1,6 @@
 
 public class Settings {
-	public static final String WINDOW_NAME = "Breakout";
+	public static final String WINDOW_NAME = "Breakout!";
 	public static final int WINDOW_WIDTH = 400;
 	public static final int WINDOW_HEIGHT = 500;
 	public static final int TOTAL_BRICKS = 20;
