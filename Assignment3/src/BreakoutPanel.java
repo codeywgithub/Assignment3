@@ -9,7 +9,6 @@ import java.awt.event.KeyListener;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import org.w3c.dom.css.Counter;
 
 public class BreakoutPanel extends JPanel implements ActionListener, KeyListener {
 	
@@ -166,7 +165,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
         
         // Draw lives left
         // TODO: Draw lives left in the top left hand corner
-        String str = String.valueOf(livesLeft);
+        String str = String.valueOf("Lives: " + livesLeft);
         g.drawString(str, Settings.LIVES_POSITION_X, Settings.LIVES_POSITION_Y);
         
         // Draw screen message
@@ -181,9 +180,9 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 	public void keyPressed(KeyEvent e) {
 		// TODO: Set the velocity of the paddle depending on whether the player is pressing left or right
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-            paddle.setXVelocity(-5);
+            paddle.setXVelocity(-2);
        } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            paddle.setXVelocity(10);
+            paddle.setXVelocity(2);
         }
 	}
 

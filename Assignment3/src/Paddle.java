@@ -22,7 +22,18 @@ public class Paddle extends Sprite {
 	
 	public void update() {
 		x += xVelocity;
+		if(x >= Settings.WINDOW_WIDTH - Settings.PADDLE_WIDTH) {
+			x = 300;
+			this.xVelocity = -1;
+		}
 		
+		if(x <= 0) {
+			// TODO: Set x to 0 so it does not leave the screen
+			x = 0;
+			// TODO: Change the x velocity to make the ball go right
+			this.xVelocity = 1;
+			
+		}
 		// TODO: Prevent the paddle from moving outside of the screen
 		// This can be done using two if statements (one for the left side of the screen and one for the right)
 

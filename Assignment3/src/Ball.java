@@ -35,7 +35,6 @@ public class Ball extends Sprite {
 			// TODO: Change the x velocity to make the ball go right
 			setXVelocity(-getXVelocity());
 			
-			//-- THIS COULD BE WRONG, NEED TO CHECK! !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		}
 		
 		// Bounce off right side of screen
@@ -45,7 +44,7 @@ public class Ball extends Sprite {
 			// TODO: Change the x velocity to make the ball go left
 			setXVelocity(-getXVelocity());
 			
-			//-- THIS COULD BE WRONG, NEED TO CHECK! !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
 		}
 		
 		// Bounce off top of screen
